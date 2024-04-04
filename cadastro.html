@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Bem vindo!</h1>
+    Nome: <br> <input type="text" id="input_cpf"> <br>
+    E-mail: <br> <input type="text" id="input_email"> <br>
+    Senha: <br> <input type="password"id="senha1"> <br>
+    Confirmação da senha: <br> <input type="password"id="senha2"> <br>
+    <button onclick="Cadastro()">Cadastro</button> 
+    <div id="div_mensagem"></div>
+    </center>
+</body>
+</html>
+<script>
+    function Cadastro() {
+        var cpf = Number (input_cpf.value);
+        var email = Number (input_email.value);
+        var senha1 = input.senha1.value;
+        var senha2 = input.senha2.value;
+
+        if (senha1 = senha2) {
+            div_mensagem.innerHTML = `Cadastro realizado com sucesso`
+        } else {
+            div_mensagem.innerHTML = `Uma das senhas não conferem`
+        }
+    }
+</script>
