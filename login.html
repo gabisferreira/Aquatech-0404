@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aquatech</title>
-    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="stylesheet" href="styleLogin.css">
 </head>
 <body>
  <!-- Cabeçalho -->
@@ -13,8 +13,8 @@
         <h1 class="titulo">Aquatech</h1>
         <ul class="navbar">
             <a href="./index.html">
-            <li>Inicial</li>
-            </a>
+                <li>Inicial</li>
+                </a>
             <li>Simulador</li>
             <li>|</li>
             <a href="login.html">
@@ -30,23 +30,18 @@
 <!-- Banner -->
 <div class="banner">
     <div class="container">
+        
+        <h1>Faça seu login!</h1>
         <left>
-        <h1>Bem vindo!</h1>
-        <p></p>
-        <b>Nome:</b> <br> <input class="input" type="text" 
-        placeholder="Seu nome"  id="input_nome"> <br>
         <p></p>
         <b>E-mail:</b> <br> <input class="input" type="text"
          placeholder="meuemail@provedor.com" id="input_email"> <br>
         <p></p>
         <b>Senha:</b> <br> <input class="input" type="password"
-          placeholder="******" id="input_senha1"> <br>
-        <p></p>
-        <b>Confirmação da senha:</b> <br> <input class="input" type="password" 
-        placeholder="******" id="input_senha2"> <br>
+          placeholder="******" id="input_senha"> <br>
         <p></p>
         </left>
-        <button class="button" onclick="Cadastro()"><b>Cadastrar</b></button> 
+        <button class="button" onclick="Cadastro()"><b>Login</b></button> 
         <p></p>
 </div>
 </div>
@@ -60,15 +55,9 @@
 </html>
 <script>
     function Cadastro() {
-        var nome = input_nome.value;
         var email = input_email.value;
-        var senha1 = input_senha1.value;
-        var senha2 = input_senha2.value;
-
-        if (senha1 == senha2) {
-            alert ("Cadastro realizado com sucesso " +nome+ "!");
-        } else {
-            alert ("Uma das senhas não conferem " +nome+ "!")
-        }
+        var senha = input_senha.value;
+        
+        alert ("Login realizado com sucesso!");
     }
 </script>

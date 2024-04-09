@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+/* Cabeçalho da página começa aqui*/
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.navbar {
+width: 500px;
+color: #e3b062;
+list-style: none;
+display: flex ;
+justify-content: space-between ;
+align-items: center;
+}
+
+.navbar a{
+    color: #e3b062;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #32b9cd;
+}
+
+.header {
+border-bottom: 3px solid #32b9cd;
+}
+/* Cabeçalho da página termina aqui*/
+
+.container {
+width: 80%;
+margin: auto;
+display: flex;
+}
+.header .container {
+    justify-content: space-between;
+} 
+.banner {
+    background-image: url("./Assets/imagens/bg-jelly-fish-para_outras_pags.png");
+    height: 595px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner .container {
+    width: 28%;
+    height: 435px;
+    margin: auto;
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    /* Vertical */
+    justify-content: center;
+    /*Horizontal  */
+    align-items: center;
+    color: palevioletred;
+  }
+
+/* Rodapé da página */
+
+.footer {
+    background-color: #32b9cd;
+    color: white;
+}
+.footer .container {
+    justify-content: center;
+    text-align: center;
+}
+ 
+/* Botão do cadastro */
+.button {
+    justify-content: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 200px;
+    background-color: rgb(210, 21, 84);
+    border: solid 2px rgb(210, 21, 84);
+    color: white;
+  }
+
+  /* Caixa de texto */
+  .input {
+    border-radius: 10px;
+    width: 180px;
+    height: 30px;
+    background-color: white;
+    border: solid 2px #32b9cd;
+    text-align: center;
+
+  }
